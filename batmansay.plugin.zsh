@@ -1,7 +1,7 @@
 ## Welcome to use DOGESAY zsh plugin!
 
 ## words that doge say
-declare -a WOWARR=("AIEEE!" "AIIEEE!" "ARRRGH!" "AWK!" "AWKKKKKK!" "BAM!" "BANG!" "BANG-ETH!" "BAP!" "BIFF!" "BLOOP!" "BLURP!" "BOFF!" "BONK!" "CLANK!" "CLANGE!" "CLANK-EST!" "CLASH!" "CLUNK!" "CLUNK-ETH!" "CRAAACK!" "CRASH!" "CRRAAACK!" "CRUNCH!" "CRUNCH-ETH!" "EEE-YOW!" "FLRBBBBB!" "GLIPP!" "GLURPP!" "KAPOW!" "KAYO!" "KER-PLOP!" "KER-SPLOOSH!" "KLONK!" "KRUNCH!" "OOOFF!" "OOOOFF!" "OUCH!" "OUCH-ETH!" "OWWW!" "OW-ETH!" "PAM!" "PLOP!" "POW!" "POWIE!" "QUNCKKK!" "RAKKK!" "RIP!" "SLOSH!" "SOCK!" "SPLAAT!" "SPLATT!" "SPLOOSH!" "SWAAP!" "SWISH!" "SWOOSH!" "THUNK!" "THWACK!" "THWACKEL!" "THWAPE!" "THWAPP!" "TOUCHÉ!" "UGGH!" "URKK!" "URKKK!" "VRONK!" "WHACK!" "WHACK-ETH!" "WHAM-ETH!" "WHAMM!" "WHAMMM!" "WHAP!" "ZAM!" "ZAMM!" "ZAMMM!" "ZAP!" "ZAP-ETH" "ZGRUPPP!" "ZLONK!" "ZLOPP!" "ZLOTT!" "ZOK!" "ZOWIE!" "ZWAPP!" "Z-ZWAP!" "Z-Z-Z-Z-WAP!" "ZZZZZWAP!")
+declare -a WOWARR=("BATMAN SAYS:")
 WOWARRLEN=${#WOWARR[@]}
 
 ## A list of element that doge should not say a word about
