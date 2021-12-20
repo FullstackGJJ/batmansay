@@ -91,9 +91,6 @@ DOGE_MAGIC(){
     # echo "$WOWWORD $HISL NOW!"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     # paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "Fuck Racism!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
-    echo "-----------"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
-    echo $1
-    echo "-----------"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
   fi
 }
 
