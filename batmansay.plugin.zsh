@@ -87,7 +87,9 @@ DOGE_MAGIC(){
     do
       WOWGAPEACHLINE="$WOWGAPEACHLINE$WOWGAP\n"
     done;
-    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    echo $DOGE| column -s $'\t' -t| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    echo "$WOWWORD $HISL NOW!"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    # paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
   fi
 }
 
