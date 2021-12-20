@@ -25,7 +25,7 @@ SYSALLOWLOLCAT=true; if ! type "lolcat" > /dev/null; then SYSALLOWLOLCAT=false;f
 USERLETFIGLET=true
 SYSALLOWFIGLET=true; if ! type "figlet" > /dev/null; then SYSALLOWFIGLET=false;fi
 ## the master himself
-DOGE='               Tb.          Tb.
+DOGE='                     Tb.          Tb.
                      :$$b.        $$$b.
                      :$$$$b.      :$$$$b.
                      :$$$$$$b     :$$$$$$b
