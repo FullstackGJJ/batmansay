@@ -1,7 +1,7 @@
 ## Welcome to use DOGESAY zsh plugin!
 
 ## words that doge say
-declare -a WOWARR=("BATMAN SAW:")
+declare -a WOWARR=("ALFRED,")
 WOWARRLEN=${#WOWARR[@]}
 
 ## A list of element that doge should not say a word about
