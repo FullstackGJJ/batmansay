@@ -1,7 +1,7 @@
 ## Welcome to use DOGESAY zsh plugin!
 
 ## words that doge say
-declare -a WOWARR=("ALFRED, PLEASE")
+declare -a WOWARR=("ALFRED,")
 WOWARRLEN=${#WOWARR[@]}
 
 ## A list of element that doge should not say a word about
@@ -87,7 +87,7 @@ DOGE_MAGIC(){
     do
       WOWGAPEACHLINE="$WOWGAPEACHLINE$WOWGAP\n"
     done;
-    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
   fi
 }
 
