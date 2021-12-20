@@ -72,7 +72,7 @@ DOGE_MAGIC(){
     WOWPREIND=$(( ( RANDOM % $WOWARRLEN )  + 1 ));
     WOWWORD=$WOWARR[$WOWPREIND];
     WOWWORDLEN=${#WOWWORD};
-    WOWEMPTYLINECOUNT=$(( ( RANDOM % $(( 48 - 7*(($HISLEN + $WOWWORDLEN + 1)/10+1) )) )+1));
+    WOWEMPTYLINECOUNT=$(( ( RANDOM % $(( 33 - 7*(($HISLEN + $WOWWORDLEN + 1)/10+1) )) )+1));
     for i in {1..$WOWEMPTYLINECOUNT}
     do
       WOWEMPTYLINE="$WOWEMPTYLINE\n"
@@ -83,7 +83,7 @@ DOGE_MAGIC(){
       WOWGAP="$WOWGAP "
     done;
     WOWGAPEACHLINE=""
-    for i in {1..48}
+    for i in {1..33}
     do
       WOWGAPEACHLINE="$WOWGAPEACHLINE$WOWGAP\n"
     done;
