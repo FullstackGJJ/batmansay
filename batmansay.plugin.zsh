@@ -72,13 +72,15 @@ DOGE_MAGIC(){
     WOWPREIND=$(( ( RANDOM % $WOWARRLEN )  + 1 ));
     WOWWORD=$WOWARR[$WOWPREIND];
     WOWWORDLEN=${#WOWWORD};
-    WOWEMPTYLINECOUNT=$(( ( RANDOM % $(( 33 - 7*(($HISLEN + $WOWWORDLEN + 1)/10+1) )) )+1));
+    # WOWEMPTYLINECOUNT=$(( ( RANDOM % $(( 33 - 7*(($HISLEN + $WOWWORDLEN + 1)/10+1) )) )+1));
+    WOWEMPTYLINECOUNT=12
     for i in {1..$WOWEMPTYLINECOUNT}
     do
       WOWEMPTYLINE="$WOWEMPTYLINE\n"
     done;
     WOWGAP="";
-    for i in {0..$((  RANDOM % 30 ))}
+    # for i in {0..$((  RANDOM % 30 ))}
+    for i in {0..$((  15 ))}
     do
       WOWGAP="$WOWGAP "
     done;
@@ -90,7 +92,7 @@ DOGE_MAGIC(){
     # echo $DOGE| column -s $'\t' -t| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     # echo "$WOWWORD $HISL NOW!"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     # paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
-    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "Fuck Racism!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "I'M BATMAN!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
   fi
 }
 
