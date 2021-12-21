@@ -25,7 +25,7 @@ SYSALLOWLOLCAT=true; if ! type "lolcat" > /dev/null; then SYSALLOWLOLCAT=false;f
 USERLETFIGLET=true
 SYSALLOWFIGLET=true; if ! type "figlet" > /dev/null; then SYSALLOWFIGLET=false;fi
 ## the master himself
-DOGE='                     Tb.          Tb.
+DOGE='                    Tb.          Tb.
                      :$$b.        $$$b.
                      :$$$$b.      :$$$$b.
                      :$$$$$$b     :$$$$$$b
@@ -38,12 +38,12 @@ DOGE='                     Tb.          Tb.
                        $$$$$$$$$$$$$$$$$$$$$$$$$b
                        $$$$$$$$$$$$$$$$$$$$$$$$$$b
                        :$$$$$$$$$$$$$$$$$$$$$$$$$$;
-                       :$$$$$$$$$$$$$^T$$$$$$$$$$P;
-                       :$$$$$$$$$$$$$b  "^T$$$$P` :
-                       :$$$$$$$$$$$$$$b._.g$$$$$p.db
-                       :$$$$$$$$$$$$$$$$$$$$$$$$$$$$;
-                       :$$$$$$$$"""^^T$$$$$$$$$$$$P^;
-                       :$$$$$$$$       ""^^T$$$P^`  ;
+                       :$$$$$$$$$$$$$^T$$$$$$$$$$P;       _____ _ __  __   ____       _______ __  __          _   _ _
+                       :$$$$$$$$$$$$$b  "^T$$$$P` :      |_   _( )  \/  | |  _ \   /\|__   __|  \/  |   /\   | \ | | |
+                       :$$$$$$$$$$$$$$b._.g$$$$$p.db       | | |/| \  / | | |_) | /  \  | |  | \  / |  /  \  |  \| | |
+                       :$$$$$$$$$$$$$$$$$$$$$$$$$$$$;      | |   | |\/| | |  _ < / /\ \ | |  | |\/| | / /\ \ | . ` | |
+                       :$$$$$$$$"""^^T$$$$$$$$$$$$P^;     _| |_  | |  | | | |_) / ____ \| |  | |  | |/ ____ \| |\  |_|
+                       :$$$$$$$$       ""^^T$$$P^`  ;    |_____| |_|  |_| |____/_/    \_\_|  |_|  |_/_/    \_\_| \_(_)
                        :$$$$$$$$    .`       `"     ;
                        $$$$$$$$;   /                :
                        $$$$$$$$;           .----,   :
@@ -58,6 +58,7 @@ DOGE='                     Tb.          Tb.
  d$$$$$$$$$$pp..__..gg$$$$$$$$$$$$$$$$$$$$$$$$$$$
 d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$p._            .gp.
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$p._.ggp._.d$$$$b'
+
 
 ## the doge magic
 
@@ -92,7 +93,8 @@ DOGE_MAGIC(){
     # echo $DOGE| column -s $'\t' -t| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     # echo "$WOWWORD $HISL NOW!"| if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi| if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
     # paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "$WOWWORD $HISL NOW!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
-    paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "I'M BATMAN!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    # paste <(echo $DOGE) <(echo $WOWGAPEACHLINE) <(echo $WOWEMPTYLINE; echo "I'M BATMAN!"|if $USERLETFIGLET&&$SYSALLOWFIGLET; then figlet -f big; else cat;fi)| column -s $'\t' -t|if $USERLETLOLCAT&&$SYSALLOWLOLCAT; then lolcat; else cat;fi
+    echo $DOGE
   fi
 }
 
